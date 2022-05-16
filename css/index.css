@@ -4,27 +4,6 @@
 
 @import url(footer.css);
 
-nav {
-    background-color:#e62129;
-    text-align: center;
-    font-size: large;
-    
-}
-
-nav li {
-    display: inline-block;
-
-}
-
-nav a {
-    color:  white; /* Warna Text */
-    display: inline-block;
-    padding: 1.5em; /* Untuk Perbesar Kotak */
-    cursor: pointer;
-    text-decoration: none; 
-    text-align: center;
-}
-
 .mySlides {
     display: none;
     animation:animasiku 3s;
@@ -181,6 +160,10 @@ nav a {
       color: cornflowerblue;
     }
 
+.berita {
+    box-sizing: border-box;
+}
+
 .berita h1{
     font-size: 20px;
     font-family: 'Noto Serif', serif;
@@ -212,6 +195,17 @@ nav a {
     .testi q {
         margin-top: 0px;
     }
+
+    .berita .row {
+        margin: 0;
+        padding: 0;
+    }
+
+    .icons .row {
+        width: 100%;
+        margin: 0;
+    }
+
 
 }
 
