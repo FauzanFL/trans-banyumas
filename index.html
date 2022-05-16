@@ -33,6 +33,8 @@
                         <li><a href="index.html#info"><button class="dropdown-item" type="button">Informasi
                                     umum</button></a>
                         </li>
+                        <li><a href="index.html#testi"><button class="dropdown-item"
+                                    type="button">Testimoni</button></a></li>
                         <li><a href="index.html#berita"><button class="dropdown-item" type="button">Berita</button></a>
                         </li>
                         <li><a href="index.html#keuntungan"><button class="dropdown-item"
@@ -112,26 +114,67 @@
 
         <div class="clear"></div>
 
-        <div class="flex-testimoni">
+        <div class="testi" id="testi">
+            <div class="clear"></div>
+            <div class="slideshow-container mt-5 ms-5 me-5">
 
-            <div>
-                <img src="img/Bus.png" alt="">
+                <div class="mySlides2">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="img/DeaniTan.jpeg" alt="Testimoni">
+                        </div>
+                        <div class="col-8">
+                            <q>"Dengan adanya TransBanyumas ini dapat membantu kegiatan masyarakat daerah Purwokerto
+                                baik yang bekerja atau pun transport lainnya selain itu dapat digunakan juga sebagai
+                                hiburan keluarga seperti berwisata ataupun jalan jalan" </q>
+                            <p class="author">- Aditya Rizkiawan Nugraha </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides2">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="img/Ran2.jpg" alt="Testimoni">
+                        </div>
+                        <div class="col-8">
+                            <q> "Bus Trans Banyumas sangat nyaman pelayanannya totalitas dan berkualitas, saya merasa
+                                lebih aman karena fasilitas dan layanan yang diberikan" </q>
+                            <p class="author">- Rania Nur Hikmah</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides2">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="img/Ozan Gaming2.jpeg" alt="Testimoni">
+                        </div>
+                        <div class="col-8">
+                            <q>"Terima kasih untuk trans banyumas karena sangat membantu sekali, terutama bagi kami yang
+                                tidak suka bepergian menggunakan kendaraan pribadi"</q>
+                            <p class="author">- Thomas A. Edison</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
             </div>
 
-            <div>
-                <img src="img/Bus.png" alt="">
+            <div class="dot-container mb-5 me-5 ms-5">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-
-            <div>
-                <img src="img/Bus.png" alt="">
-            </div>
-
-
-
         </div>
 
         <div class="berita" id="berita">
-            <div class="row ms-4">
+            <div class="text-center">
+                <h2>Berita</h2>
+            </div>
+            <div class="row">
 
                 <div class="berita1 col-12 col-md-12 m-2">
                     <div class="row">
@@ -327,6 +370,7 @@
         crossorigin="anonymous"></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/gambar.js"></script>
+    <script src="scripts/testi.js"></script>
 </body>
 
 </html>

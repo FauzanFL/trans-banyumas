@@ -2,6 +2,11 @@ html {
     scroll-behavior: smooth;
 }
 
+p {
+    font-family: 'Noto Serif', serif;
+    line-height: 1.15em;
+}
+
 header {
     box-sizing: border-box;
     background-color: #E62129;

@@ -25,18 +25,6 @@ nav a {
     text-align: center;
 }
 
-.tengahbawah {
-    margin-top: 3%;
-    text-align: center;
-    margin-left: 30%;
-    margin-right: 30%;
-    padding: 10px;
-    font-style: italic;
-    font-size: 30px;
-    color:black;
-    margin-bottom: 3%;
-}
-
 .mySlides {
     display: none;
     animation:animasiku 3s;
@@ -51,19 +39,6 @@ nav a {
     padding: 0px;
 }
 
-.isi-item1 img {
-    width: 300px;
-    height: 300px;
-    float: left;
-    margin-left: 7%;
-    /* color: black;
-    text-align: center;
-    margin-right: 3%;
-    background-color:#f4f2f4;
-    float: left;
-    border-radius: 7px;
-    margin-left: 7%; */
-}
 
 .isi-item2 {
     color: black;
@@ -73,8 +48,10 @@ nav a {
     float: center;
     border-radius: 7px;
     margin-left: 3%;
-    border: 3px outset red;
-    margin-top: 5%;
+    border: 2px solid red;
+    box-shadow: 2px 2px #d60909;
+    margin-top: 2%;
+    padding: 20px;
 }
 
 .isi-item2 p {
@@ -82,46 +59,6 @@ nav a {
     margin-right: 2%;
     margin-top: 1%;
 }
-
-.isi-item3 {
-    color: black;
-    text-align: center;
-    margin-top: 3%;
-    margin-left: 3%;
-    margin-right: 3%;
-    background-color:white;
-    float: center;
-    border-radius: 7px;
-    border-top: 6%;
-}
-
-.isitengah {
-    margin-top: 5%;
-    background-color: #FFFFFF;
-    margin-left: 3%;
-    margin-right: 3%;
-    border-radius: 7px;
-    width: 100px;
-    height: 100px;
-    border: 3px outset red;
-    /* float: center; */
-
-}
-
-.isitengah1 {
-    color:black;
-    text-align: center;
-    box-sizing: border-box;
-    float: center;
-}
-
-.isitengah1 img {
-    width: 90px;
-    height: 90px;
-    float: left;
-    margin-left: 3%;
-}
-
 
 .icon-item, .icon-item2 {
     box-sizing: border-box;
@@ -147,34 +84,106 @@ nav a {
 }
 
 
-.flex-testimoni {
-    display: flex;
-    background-color:#FFFFFF;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    border: 3px #e62129 outset;
-}
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: white;
+    border: 2px solid #e62129;
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 2px 0 #d60909;
+  }
+  
+  /* Slides */
+  .mySlides2 {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  .mySlides2 img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 0 6px 2px #717171;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #e62129;
+    font-weight: bold;
+    font-size: 50px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: #e62129;
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+      text-align: center;
+      padding: 20px;
+      background: white;
+      border: 2px solid #e62129;
+      border-top: none;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 2px 2px #d60909;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgba(240, 33, 41, 0.8);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #d60909;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {
+      font-size: 1.2em;
+      font-style: italic;
+      font-family: 'Noto Serif', serif;
+    }
 
-.flex-testimoni img {
-    height: 200px;
-    width: 200px;
-    
-}
-
-.flex-testimoni > div {
-    background-color: #FFFFFF;
-    border: 3px #e62129 outset;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
+    .testi q {
+        display: block;
+        margin-top: 40px;
+    }
+  
+  /* Add a blue color to the author */
+  .author {
+      margin-top: 10px;
+      color: cornflowerblue;
+    }
 
 .berita h1{
     font-size: 20px;
+    font-family: 'Noto Serif', serif;
 }
 
 .berita1 img{
@@ -196,9 +205,14 @@ nav a {
 }
 
 @media (max-width: 500px) {
-    .berita1 {
-        margin-left: 20px;
+    .berita h1 {
+        width: 200px;
     }
+
+    .testi q {
+        margin-top: 0px;
+    }
+
 }
 
 
